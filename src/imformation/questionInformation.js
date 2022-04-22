@@ -1,0 +1,98 @@
+export const questionInformation = [
+    {
+        questionNumber: 1,
+        question: '둘중에 어떤 상황이 더 괜찮은 거 같아?',
+        answer1: '당연하지! 내 자신인데',
+        answer2: '나도 내 자신을 모를 때가 많아',
+    },
+    {
+        questionNumber: 2,
+        question: '너는 너의 모습들 중 많은 것을 고치고 싶어?',
+        answer1: '아니! 난 지금 나도 좋은데',
+        answer2: '고치고 싶은 것이 많긴 해',
+    },
+    {
+        questionNumber: 3,
+        question: '너는 어려운 일이 생기면 쉽게 포기해?',
+        answer1: '끝까지 하는 편이야',
+        answer2: '어려운 거는 싫어..',
+    },
+    {
+        questionNumber: 4,
+        question: '주변 사람들이 너를 어떻게 볼 거 같아?',
+        answer1: '나를 좋게 생각할 거 같아',
+        answer2: '그냥 별생각 없을 거 같아',
+    },
+    {
+        questionNumber: 5,
+        question: '너는 너 자신을 사랑한다고 생각해?',
+        answer1: '당연하지!',
+        answer2: '흠.. 모르겠어',
+    },
+    {
+        questionNumber: 6,
+        question: '너는 가끔 네가 아닌 다른 사람이 되었으면 해?',
+        answer1: '생각은 들 때 있어도 깊게 생각한 적은 없어',
+        answer2: '자주 내가 아닌 다른 사람이 되길 원해',
+    },
+    {
+        questionNumber: 7,
+        question: '요즘 별것도 아닌 거에 화가 나?',
+        answer1: '아니 나는 화가 나지는 않아',
+        answer2: '자주 화가 나',
+    },
+    {
+        questionNumber: 8,
+        question: '나에게 네가 잘하는 것을 다섯 가지 이상 말해줄 수 있어?',
+        answer1: '당연하지 ! 나는 일단 ~',
+        answer2: '음.. 다섯 가지나 말해야 해? ',
+    },
+    {
+        questionNumber: 9,
+        question: '너는 스스로에 대한 자신이 있어?',
+        answer1: '나는 뭐든 잘 해낼 거라고 생각해!',
+        answer2: '아니.. 자신은 없는 거 같아',
+    },
+    {
+        questionNumber: 10,
+        question: '조심스럽지만.. 요즘에 안 좋은 생각 한 적 있어?',
+        answer1: '별로 그런 생각 안 해!',
+        answer2: '자주 생각이 드는 거 같아',
+    },
+    {
+        questionNumber: 11,
+        question: '너는 행복한 사람인 거 같아?',
+        answer1: '요즘에 행복한 사람이라고 느껴져',
+        answer2: '글쎄.. 별생각이 없네',
+    },
+    {
+        questionNumber: 12,
+        question: '네가 하는 일이 거의 뜻대로 돼?',
+        answer1: '그런 편이야',
+        answer2: '뜻대로 잘 안될 때가 많아..',
+    },
+    {
+        questionNumber: 13,
+        question: '너는 성공할 거라는 자신이 있어?',
+        answer1: '응응, 나는 내가 원하는걸 이룰 거 같아',
+        answer2: '자신이 있지는 않아',
+    },
+    {
+        questionNumber: 14,
+        question: '너는 언제든지 마음만 먹으면 친구 사귈 수 있어? 나는 부끄러워..',
+        answer1: '응! 나 친화력 좋아',
+        answer2: '나도 너랑 똑같아.. 부끄러워',
+    },
+    {
+        questionNumber: 15,
+        question: '너는 너 자신에게 엄격하다고 생각해?',
+        answer1: '아니? 너그러운 편이야',
+        answer2: '그런 거 같아.. 실수 용납 못 해',
+    },
+    {
+        questionNumber: 16,
+        question: '마지막 질문이야 ! 세상에서 제일 소중한 거는 타인이 아닌 본인인 거 알고 있지?',
+        answer1: '당연하지! 잘 알고 있어',
+        answer2: '알긴 아는데 쉽지 않은 거 같아',
+    },
+]
