@@ -1,7 +1,7 @@
 export const questionInformation = [
     {
         questionNumber: 1,
-        question: '둘중에 어떤 상황이 더 괜찮은 거 같아?',
+        question: '너는 너 자신을 잘 안다고 생각해?',
         answer1: '당연하지! 내 자신인데',
         answer2: '나도 내 자신을 모를 때가 많아',
     },
