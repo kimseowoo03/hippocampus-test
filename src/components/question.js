@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { questionInformation } from '../imformation/questionInformation'
 import {useNavigate} from 'react-router-dom'
 import { createSearchParams } from "react-router-dom";
+import styled from 'styled-components'
 
 function Question() {
     const [questionNumber, setQuestionNumber] = useState(0);
@@ -27,18 +28,52 @@ function Question() {
         }
     };
     return(
-        <>
+        <Wrapper>
         <p> {questionInformation[questionNumber].questionNumber} / {questionInformation.length}</p>
         <p>{questionInformation[questionNumber].question}</p>
-        <div>
-            <button onClick={() => clickbutton(1)}>{questionInformation[questionNumber].answer1}</button>
-            <button onClick={() => clickbutton(0)}>{questionInformation[questionNumber].answer2}</button>
-        </div>
-        <Link to="/">
-        <button>다시하기</button>
-        </Link>
-        </>
+            <Button onClick={() => clickbutton(1)}>{questionInformation[questionNumber].answer1}</Button>
+            <Button onClick={() => clickbutton(0)}>{questionInformation[questionNumber].answer2}</Button>
+        <Link to="/"><ResetButton>다시하기</ResetButton></Link>
+        </Wrapper>
     );
 }
 
 export default Question;
+
+const Wrapper = styled.div`
+display:flex;
+flex-direction: column;
+align-items: center;
+`
+
+const Button = styled.button`
+width: 290px;
+height: 65px;
+border-radius: 20px;
+border-color: black;
+margin-top: 10px;
+background-color: transparent;;
+&:hover{  
+  transition: background 0.2s ease-in;
+  background-color: #ACE987;
+}
+-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+`
+
+const ResetButton = styled.button`
+width: 100px;
+height: 35px;
+border-color: black;
+border-radius: 50px;
+margin-top: 80px;
+background-color: #ACE987;
+&:hover{  
+  transition: background 0.2s ease-in;
+  background-color: #8AC666;
+}
+-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+`
