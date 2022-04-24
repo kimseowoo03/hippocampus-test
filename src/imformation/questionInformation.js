@@ -91,7 +91,7 @@ export const questionInformation = [
     },
     {
         questionNumber: 16,
-        question: '마지막 질문이야 ! 세상에서 제일 소중한 거는 타인이 아닌 본인인 거 알고 있지?',
+        question: '세상에서 제일 소중한 거는 타인이 아닌 본인인 거 알고 있지?',
         answer1: '당연하지! 잘 알고 있어',
         answer2: '알긴 아는데 쉽지 않은 거 같아',
     },

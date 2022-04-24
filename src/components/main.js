@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
-
 function Main() {
   return (
     <Wrapper>
@@ -19,25 +18,24 @@ const Wrapper = styled.div`
 display:flex;
 flex-direction: column;
 align-items: center;
+font-family: 'LeeSeoyun';
 `
 const Div = styled.div`
-width: 200px;
+width: 180px;
 padding-top: 300px;
 `
 const Line = styled.div`
-margin: 0 auto ;
-height: 3px;
-text-align: center;
+height: 5px;
 position: relative;
 background-color: #ACE987;
-
+border-radius: 20px;
+text-align: center;
 `
 const P = styled.p`
+position: relative;
 font-size: 36px;
-top: -25px;
-left: 5px;
+top: -17px;
 margin: 0;
-position: absolute;
 ` 
 
 const Button = styled.button`
@@ -54,4 +52,6 @@ background-color: #ACE987;
 -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    font-family: 'LeeSeoyun';
+font-weight: 700;
 `

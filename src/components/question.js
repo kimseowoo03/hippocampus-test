@@ -27,10 +27,14 @@ function Question() {
             });
         }
     };
+
+    const style = {
+
+    }
     return(
         <Wrapper>
-        <p> {questionInformation[questionNumber].questionNumber} / {questionInformation.length}</p>
-        <p>{questionInformation[questionNumber].question}</p>
+        <NumberP> {questionInformation[questionNumber].questionNumber} / {questionInformation.length}</NumberP>
+        <QuestionP>{questionInformation[questionNumber].question}</QuestionP>
             <Button onClick={() => clickbutton(1)}>{questionInformation[questionNumber].answer1}</Button>
             <Button onClick={() => clickbutton(0)}>{questionInformation[questionNumber].answer2}</Button>
         <Link to="/"><ResetButton>다시하기</ResetButton></Link>
@@ -44,8 +48,17 @@ const Wrapper = styled.div`
 display:flex;
 flex-direction: column;
 align-items: center;
+font-family: 'LeeSeoyun';
 `
 
+const NumberP = styled.p`
+margin-top: 70px
+`
+const QuestionP = styled.p`
+font-size: 22px;
+margin-bottom: 40px;
+text-align: center;
+`
 const Button = styled.button`
 width: 290px;
 height: 65px;
@@ -60,6 +73,8 @@ background-color: transparent;;
 -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+font-family: 'LeeSeoyun';
+font-size: 16px;
 `
 
 const ResetButton = styled.button`
@@ -76,4 +91,6 @@ background-color: #ACE987;
 -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+font-family: 'LeeSeoyun';
+font-weight: 700;
 `

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import {Link} from 'react-router-dom'
 import { resultInformation } from "../imformation/resultInformation";
 import { useSearchParams } from "react-router-dom";
+import styled from 'styled-components'
 
 function Result() {
     const [resultData, setResultData] = useState({});
@@ -26,17 +27,121 @@ function Result() {
     }, [resultScore]);
 
     return(
-        <>
-        <h1>나의 해마 유형은</h1>
-        <p>'{resultData.type} '</p>
-        <img src={resultData.img}></img>
-        <p>{resultData.typeExplanation}</p>
-        <h2>해마 진단서</h2>
-        <p>{resultData.explanation}</p>
+        <Wrapper>
+         <Line>
+        <H1>나의 해마 유형은</H1>
+        </Line>
+        <OneP>' {resultData.type} '</OneP>
+        <Img src={resultData.img}></Img>
+        <P>{resultData.typeExplanation}</P>
+        <TwoLine><H2>해마 진단서</H2></TwoLine>
+        <TwoP>{resultData.explanation}</TwoP>
         {/*결과 공유란*/}
-        <Link to="/"><button>다시하기</button></Link>
-        </>
+        <Link to="/"><Button>다시하기</Button></Link>
+        <ThrLine><A href="https://www.instagram.com/kimse0w00">만든 사람 보러가기</A></ThrLine>
+        </Wrapper>
     );
 }
 
 export default Result;
+const Wrapper = styled.div`
+display:flex;
+flex-direction: column;
+align-items: center;
+font-family: 'LeeSeoyun';
+`
+const Img = styled.img`
+max-width: 360px;
+width: 100%;
+height: 100%;
+`
+
+const P = styled.p`
+max-width: 280px;
+text-align: center;
+font-size: 24px;
+margin: 0;
+line-height: 1.1;
+`
+
+const Line = styled.div`
+height: 5px;
+width: 250px;
+background-color: #ACE987;
+margin-top: 40px;
+position: relative;
+border-radius: 20px;
+text-align: center;
+`
+
+const H1 = styled.p`
+font-size: 36px;
+position: relative;
+top: -16px;
+margin: 0;
+`
+
+const OneP = styled.p`
+margin-top: 30px;
+margin-bottom: 0;
+font-size: 28px;
+` 
+
+const TwoLine = styled.div`
+height: 5px;
+width: 170px;
+background-color: #ACE987;
+position: relative;
+border-radius: 20px;
+text-align: center;
+margin-top: 60px;
+`
+
+const H2 = styled.p`
+font-size: 34px;
+position: relative;
+top: -13px;
+margin: 0;
+`
+
+const TwoP = styled.p`
+max-width: 280px;
+text-align: center;
+font-size: 24px;
+margin-top: 30px;
+line-height: 1.2;
+`
+
+const Button = styled.button`
+width: 130px;
+height: 35px;
+margin: 30px;
+border-color: black;
+border-radius: 20px;
+background-color: #ACE987;
+&:hover{  
+  transition: background 0.2s ease-in;
+  background-color: #8AC666;
+}
+-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+font-family: 'LeeSeoyun';
+font-weight: 700;
+`
+
+const ThrLine = styled.div`
+height: 5px;
+width: 130px;
+background-color: #ACE987;
+position: relative;
+border-radius: 20px;
+text-align: center;
+`
+
+const A = styled.a`
+position: relative;
+top: -5px;
+text-decoration-line: none;
+color: black;
+`

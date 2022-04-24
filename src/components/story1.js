@@ -31,6 +31,7 @@ const Wrapper = styled.div`
 display:flex;
 flex-direction: column;
 align-items: center;
+font-family: 'LeeSeoyun';
 `
 const P = styled.p`
 max-width: 270px;
@@ -38,6 +39,7 @@ text-align: center;
 font-size: 16px;
 margin: 0;
 padding-top: 50px;
+line-height: 1.2;
 `
 
 const Img = styled.img`
@@ -61,4 +63,6 @@ background-color: #ACE987;
   transition: background 0.2s ease-in;
   background-color: #8AC666;
 }
+font-family: 'LeeSeoyun';
+font-weight: 700;
 `

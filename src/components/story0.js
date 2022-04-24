@@ -20,11 +20,13 @@ const Wrapper = styled.div`
 display:flex;
 flex-direction: column;
 align-items: center;
+font-family: 'LeeSeoyun';
 `
 const P = styled.p`
 max-width: 300px;
 margin-top: 220px;
 text-align: center;
+line-height: 1.3;
 `
 const Button = styled.button`
 width: 80px;
@@ -40,4 +42,6 @@ background-color: #ACE987;
 -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+font-family: 'LeeSeoyun';
+font-weight: 700;
 `
