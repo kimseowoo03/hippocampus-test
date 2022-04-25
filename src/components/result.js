@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { resultInformation } from "../imformation/resultInformation";
 import { useSearchParams } from "react-router-dom";
 import styled from 'styled-components'
+import KakaoShare from './KakaoShare';
 
 function Result() {
     const [resultData, setResultData] = useState({});
@@ -36,7 +37,7 @@ function Result() {
         <P>{resultData.typeExplanation}</P>
         <TwoLine><H2>해마 진단서</H2></TwoLine>
         <TwoP>{resultData.explanation}</TwoP>
-        {/*결과 공유란*/}
+        <KakaoShare />
         <Link to="/"><Button>다시하기</Button></Link>
         <ThrLine><A href="https://www.instagram.com/kimse0w00">만든 사람 보러가기</A></ThrLine>
         </Wrapper>
