@@ -5,8 +5,9 @@ function Main() {
   return (
     <Wrapper>
     <Div>
-    <Line><P>해마 테스트</P></Line>
     <Pp>나의 해마 유형은 뭘까?</Pp>
+    <Line><P>해마 테스트</P></Line>
+    <Ppp>이 테스트는 짧은 스토리가 있는 테스트입니다! 그냥 넘기시면 결과물에 이해하기 어렵습니다!</Ppp>
     </Div>
     <Link to="/story0"><Button>시작하기</Button></Link>
     </Wrapper>
@@ -23,7 +24,7 @@ font-family: 'LeeSeoyun';
 `
 const Div = styled.div`
 width: 180px;
-padding-top: 260px;
+padding-top: 220px;
 `
 const Line = styled.div`
 height: 5px;
@@ -42,7 +43,7 @@ margin: 0;
 const Button = styled.button`
 width: 150px;
 height: 35px;
-margin-top: 40px;
+margin-top: 30px;
 border-color: black;
 border-radius: 20px;
 background-color: #91C285;
@@ -58,6 +59,13 @@ font-weight: 700;
 `
 const Pp = styled.p`
 font-size: 14px;
+text-align: center;
+color: gray;
+padding-bottom: 10px;
+`
+const Ppp = styled.p`
+padding-top: 15px;
+font-size: 12px;
 text-align: center;
 color: gray;
 `

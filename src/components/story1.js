@@ -49,7 +49,7 @@ max-width: 360px;
 width: 100%;
 height: 100%;
 margin-top: 20px;
-margin-bottom: 50px;
+margin-bottom: 20px;
 `
 const Button = styled.button`
 border-color: black;
