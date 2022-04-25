@@ -1,82 +1,43 @@
 import React, { useEffect } from "react";
-const {Kakao} = window;
+const { Kakao } = window;
 
 const KakaoShare = () => {
     const url = "https://hippocampus-test.netlify.app/"
     const resultUrl = window.location.href;
 
-    console.log('ddd', resultUrl, url)
-
     useEffect(() => {
+        Kakao.cleanup();
         Kakao.init('bed533cf962ff340c1987f3869347037');
     },[]);
 
-    Kakao.Link.sendDefault({
-        objectType: 'feed',
-        content: {
-          title: '오늘의 디저트',
-          description: '아메리카노, 빵, 케익',
-          imageUrl:
-            'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            androidExecutionParams: 'test',
-          },
-        },
-        itemContent: {
-          profileText: 'Kakao',
-          profileImageUrl: 'https://mud-kage.kakao.com/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-          titleImageUrl: 'https://mud-kage.kakao.com/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-          titleImageText: 'Cheese cake',
-          titleImageCategory: 'Cake',
-          items: [
-            {
-              item: 'Cake1',
-              itemOp: '1000원',
+    const shareKakao = () => {
+        Kakao.Link.sendDefault({
+            objectType: 'feed',
+            content: {
+              title: '해마 테스트 결과',
+              description: '나는 해마의 금쪽이입니다.',
+              imageUrl:
+                'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+              link: {
+                mobileWebUrl: 'https://developers.kakao.com',
+                androidExecutionParams: 'test',
+              },
             },
-            {
-              item: 'Cake2',
-              itemOp: '2000원',
-            },
-            {
-              item: 'Cake3',
-              itemOp: '3000원',
-            },
-            {
-              item: 'Cake4',
-              itemOp: '4000원',
-            },
-            {
-              item: 'Cake5',
-              itemOp: '5000원',
-            },
-          ],
-          sum: '총 결제금액',
-          sumOp: '15000원',
-        },
-        social: {
-          likeCount: 10,
-          commentCount: 20,
-          sharedCount: 30,
-        },
-        buttons: [
-          {
-            title: '웹으로 이동',
-            link: {
-              mobileWebUrl: 'https://developers.kakao.com',
-            },
-          },
-          {
-            title: '앱으로 이동',
-            link: {
-              mobileWebUrl: 'https://developers.kakao.com',
-            },
-          },
-        ]
-      });
-    return(<>
-    <button>가기</button>
-    </>)
+            buttons: [
+              {
+                title: '테스트 하러가기',
+                link: {
+                  mobileWebUrl: url,
+                },
+              }
+            ]
+          });
+    }
+    return(
+    <>
+    <button onClick={shareKakao}>바로가기</button>
+    </>
+    );
 }
 
 export default KakaoShare;
