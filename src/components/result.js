@@ -13,18 +13,6 @@ function Result() {
     const [serch] = useSearchParams();
     const resultScore = parseInt(serch.get('score'));
 
-    const copyUrl = (url) => {
-        /*console.log(url);
-        const textarea = document.createElement("textarea");
-        textarea.value = url;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand("copy");
-        document.body.removeChild(textarea);
-        alert("클립보드에 복사되었습니다!");*/
-
-    }
-
     useEffect(() => {
         if(resultScore === 14 || resultScore === 15 || resultScore === 16) {
             const findResult= resultInformation.find( (it) => it.id === '금쪽');
