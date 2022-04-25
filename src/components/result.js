@@ -37,7 +37,7 @@ function Result() {
         <P>{resultData.typeExplanation}</P>
         <TwoLine><H2>해마 진단서</H2></TwoLine>
         <TwoP>{resultData.explanation}</TwoP>
-        <KakaoShare />
+        <KakaoShare data={resultData} />
         <Link to="/"><Button>다시하기</Button></Link>
         <ThrLine><A href="https://www.instagram.com/kimse0w00">만든 사람 보러가기</A></ThrLine>
         </Wrapper>
