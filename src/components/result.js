@@ -4,12 +4,26 @@ import { resultInformation } from "../imformation/resultInformation";
 import { useSearchParams } from "react-router-dom";
 import styled from 'styled-components'
 import KakaoShare from './KakaoShare';
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import shareIcon from '../imgs/shareIcon.png';
 
 function Result() {
     const [resultData, setResultData] = useState({});
 
     const [serch] = useSearchParams();
     const resultScore = parseInt(serch.get('score'));
+
+    const copyUrl = (url) => {
+        /*console.log(url);
+        const textarea = document.createElement("textarea");
+        textarea.value = url;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        alert("클립보드에 복사되었습니다!");*/
+
+    }
 
     useEffect(() => {
         if(resultScore === 14 || resultScore === 15 || resultScore === 16) {
@@ -37,7 +51,14 @@ function Result() {
         <P>{resultData.typeExplanation}</P>
         <TwoLine><H2>해마 진단서</H2></TwoLine>
         <TwoP>{resultData.explanation}</TwoP>
+        <ShareLine><ShareP>공유하기</ShareP></ShareLine>
+        <div>
         <KakaoShare data={resultData} />
+        <CopyToClipboard text='https://hippocampus-test.netlify.app/' onCopy={()=>alert("링크가 복사되었습니다!")}>
+        <ShareButton><ShareImg src={shareIcon} alt="링크 복사 아이콘"/></ShareButton>
+        </CopyToClipboard>
+        </div>
+        <LastP>카카오톡 공유는 내 결과가 공유돼요!<br />사이트 링크 공유는 오른쪽을 클릭해주세요!</LastP>
         <Link to="/"><Button>다시하기</Button></Link>
         <ThrLine><A href="https://www.instagram.com/kimse0w00">만든 사람 보러가기</A></ThrLine>
         </Wrapper>
@@ -56,7 +77,6 @@ max-width: 360px;
 width: 100%;
 height: 100%;
 `
-
 const P = styled.p`
 max-width: 280px;
 text-align: center;
@@ -64,47 +84,43 @@ font-size: 24px;
 margin: 0;
 line-height: 1.1;
 `
-
 const Line = styled.div`
 height: 5px;
-width: 250px;
-background-color: #ACE987;
+width: 270px;
+background-color: #91C285;
 margin-top: 40px;
 position: relative;
 border-radius: 20px;
 text-align: center;
 `
-
 const H1 = styled.p`
 font-size: 36px;
 position: relative;
 top: -16px;
 margin: 0;
+letter-spacing: 2px;
 `
-
 const OneP = styled.p`
 margin-top: 30px;
 margin-bottom: 0;
 font-size: 28px;
 ` 
-
 const TwoLine = styled.div`
 height: 5px;
-width: 170px;
-background-color: #ACE987;
+width: 200px;
+background-color: #91C285;
 position: relative;
 border-radius: 20px;
 text-align: center;
 margin-top: 60px;
 `
-
 const H2 = styled.p`
 font-size: 34px;
 position: relative;
 top: -13px;
 margin: 0;
+letter-spacing: 2px;
 `
-
 const TwoP = styled.p`
 max-width: 280px;
 text-align: center;
@@ -112,37 +128,73 @@ font-size: 24px;
 margin-top: 30px;
 line-height: 1.2;
 `
-
 const Button = styled.button`
-width: 130px;
-height: 35px;
-margin: 30px;
+width: 200px;
+height: 50px;
+margin-top: 20px;
+margin-bottom: 25px;
 border-color: black;
 border-radius: 20px;
-background-color: #ACE987;
+background-color: #91C285;
 &:hover{  
   transition: background 0.2s ease-in;
-  background-color: #8AC666;
+  background-color: #709A66;
 }
 -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 font-family: 'LeeSeoyun';
 font-weight: 700;
+font-size: 18px;
+letter-spacing: 1.5px;
 `
-
 const ThrLine = styled.div`
 height: 5px;
 width: 130px;
-background-color: #ACE987;
+background-color: #91C285;
 position: relative;
 border-radius: 20px;
 text-align: center;
+margin-bottom: 30px;
 `
-
 const A = styled.a`
 position: relative;
 top: -5px;
 text-decoration-line: none;
 color: black;
+font-weight: 700;
+letter-spacing: 1px;
+`
+const ShareLine = styled.div`
+height: 5px;
+width: 180px;
+background-color: #91C285;
+position: relative;
+border-radius: 20px;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 25px;
+`
+const ShareP = styled.p`
+font-size: 30px;
+position: relative;
+top: -13px;
+margin: 0;
+letter-spacing: 3px;
+`
+const ShareButton = styled.button`
+border: none;
+-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+padding: 0;
+background-color: transparent;
+`
+const ShareImg = styled.img`
+width: 35px;
+`
+const LastP = styled.p`
+font-size: 14px;
+text-align: center;
+color: gray;
 `

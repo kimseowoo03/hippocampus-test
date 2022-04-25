@@ -24,9 +24,10 @@ font-family: 'LeeSeoyun';
 `
 const P = styled.p`
 max-width: 300px;
-margin-top: 220px;
+margin-top: 200px;
 text-align: center;
 line-height: 1.3;
+font-size: 18px;
 `
 const Button = styled.button`
 width: 80px;
@@ -34,14 +35,15 @@ height: 35px;
 margin: 30px;
 border-color: black;
 border-radius: 20px;
-background-color: #ACE987;
+background-color: #91C285;
 &:hover{  
   transition: background 0.2s ease-in;
-  background-color: #8AC666;
+  background-color: #709A66;
 }
 -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 font-family: 'LeeSeoyun';
 font-weight: 700;
+letter-spacing: 1px;
 `

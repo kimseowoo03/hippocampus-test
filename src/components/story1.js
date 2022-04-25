@@ -40,6 +40,8 @@ font-size: 16px;
 margin: 0;
 padding-top: 50px;
 line-height: 1.2;
+height: 70px;
+letter-spacing: 1px;
 `
 
 const Img = styled.img`
@@ -58,11 +60,12 @@ width: 220px;
 height: 35px;
 margin-top: 10px;
 border-radius: 50px;
-background-color: #ACE987;
+background-color: #91C285;
 &:hover{  
   transition: background 0.2s ease-in;
-  background-color: #8AC666;
+  background-color: #709A66;
 }
 font-family: 'LeeSeoyun';
 font-weight: 700;
+letter-spacing: 1.5px;
 `

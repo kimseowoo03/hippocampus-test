@@ -54,6 +54,7 @@ const QuestionP = styled.p`
 font-size: 22px;
 margin-bottom: 40px;
 text-align: center;
+letter-spacing: 1px;
 `
 const Button = styled.button`
 width: 290px;
@@ -64,13 +65,14 @@ margin-top: 10px;
 background-color: transparent;;
 &:hover{  
   transition: background 0.2s ease-in;
-  background-color: #ACE987;
+  background-color: #91C285;
 }
 -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 font-family: 'LeeSeoyun';
 font-size: 16px;
+letter-spacing: 1px;
 `
 
 const ResetButton = styled.button`
@@ -79,14 +81,15 @@ height: 35px;
 border-color: black;
 border-radius: 50px;
 margin-top: 80px;
-background-color: #ACE987;
+background-color: #91C285;
 &:hover{  
   transition: background 0.2s ease-in;
-  background-color: #8AC666;
+  background-color: #709A66;
 }
 -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 font-family: 'LeeSeoyun';
 font-weight: 700;
+letter-spacing: 1px;
 `
