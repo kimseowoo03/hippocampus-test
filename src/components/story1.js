@@ -20,7 +20,7 @@ function Story1() {
     <P>{storyInformation[questionNumber].speaking}</P>
     <Img alt="질문 전 이미지" src={storyInformation[questionNumber].img}></Img>
     <Button onClick={() => buttonClick()}>{storyInformation[questionNumber].answer1}</Button>
-    <Button onClick={() => buttonClick()}>{storyInformation[questionNumber].answer2}</Button>
+    <Button2 onClick={() => buttonClick()}>{storyInformation[questionNumber].answer2}</Button2>
     </Wrapper>
   );
 }
@@ -38,7 +38,7 @@ max-width: 270px;
 text-align: center;
 font-size: 16px;
 margin: 0;
-padding-top: 50px;
+padding-top: 20px;
 line-height: 1.2;
 height: 70px;
 letter-spacing: 1px;
@@ -68,4 +68,23 @@ background-color: #91C285;
 font-family: 'LeeSeoyun';
 font-weight: 700;
 letter-spacing: 1.5px;
+`
+const Button2 = styled.button`
+border-color: black;
+-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+width: 220px;
+height: 35px;
+margin-top: 10px;
+border-radius: 50px;
+background-color: #91C285;
+&:hover{  
+  transition: background 0.2s ease-in;
+  background-color: #709A66;
+}
+font-family: 'LeeSeoyun';
+font-weight: 700;
+letter-spacing: 1.5px;
+margin-bottom: 50px;
 `

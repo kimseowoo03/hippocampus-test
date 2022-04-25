@@ -92,4 +92,5 @@ background-color: #91C285;
 font-family: 'LeeSeoyun';
 font-weight: 700;
 letter-spacing: 1px;
+margin-bottom: 170px;
 `
