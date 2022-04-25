@@ -27,10 +27,6 @@ function Question() {
             });
         }
     };
-
-    const style = {
-
-    }
     return(
         <Wrapper>
         <NumberP> {questionInformation[questionNumber].questionNumber} / {questionInformation.length}</NumberP>

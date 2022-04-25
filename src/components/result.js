@@ -32,7 +32,7 @@ function Result() {
         <H1>나의 해마 유형은</H1>
         </Line>
         <OneP>' {resultData.type} '</OneP>
-        <Img src={resultData.img}></Img>
+        <Img alt="결과 사진" src={resultData.img}></Img>
         <P>{resultData.typeExplanation}</P>
         <TwoLine><H2>해마 진단서</H2></TwoLine>
         <TwoP>{resultData.explanation}</TwoP>

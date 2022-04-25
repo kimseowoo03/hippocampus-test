@@ -18,7 +18,7 @@ function Story1() {
   return (
     <Wrapper>
     <P>{storyInformation[questionNumber].speaking}</P>
-    <Img src={storyInformation[questionNumber].img}></Img>
+    <Img alt="질문 전 이미지" src={storyInformation[questionNumber].img}></Img>
     <Button onClick={() => buttonClick()}>{storyInformation[questionNumber].answer1}</Button>
     <Button onClick={() => buttonClick()}>{storyInformation[questionNumber].answer2}</Button>
     </Wrapper>
