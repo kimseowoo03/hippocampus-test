@@ -55,6 +55,7 @@ font-size: 22px;
 margin-bottom: 40px;
 text-align: center;
 letter-spacing: 1px;
+height: 50px;
 `
 const Button = styled.button`
 width: 290px;

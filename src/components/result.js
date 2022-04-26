@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import { resultInformation } from "../imformation/resultInformation";
 import { useSearchParams } from "react-router-dom";
 import styled from 'styled-components'
@@ -13,6 +13,7 @@ function Result() {
     const [serch] = useSearchParams();
     const resultScore = parseInt(serch.get('score'));
 
+    const navigate = useNavigate();
     useEffect(() => {
         if(resultScore === 14 || resultScore === 15 || resultScore === 16) {
             const findResult= resultInformation.find( (it) => it.id === '금쪽');
@@ -23,9 +24,12 @@ function Result() {
         }else if(resultScore === 5 ||resultScore === 6 ||resultScore === 7 ||resultScore === 8 ||resultScore === 9) {
             const findResult = resultInformation.find( (it) => it.id === '돌봄');
             setResultData(findResult);
-        }else{
+        }else if(resultScore === 1 || resultScore === 2 || resultScore === 3 || resultScore === 4){
             const findResult = resultInformation.find( (it) => it.id === '지킴');
             setResultData(findResult);
+        }else{
+            alert('입력하신 정보는 없습니다. 처음으로 돌아갑니다.');
+            navigate('/');
         }
     }, [resultScore]);
 
