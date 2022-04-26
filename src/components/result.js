@@ -14,6 +14,7 @@ function Result() {
     const resultScore = parseInt(serch.get('score'));
 
     const navigate = useNavigate();
+    
     useEffect(() => {
         if(resultScore === 14 || resultScore === 15 || resultScore === 16) {
             const findResult= resultInformation.find( (it) => it.id === '금쪽');
@@ -29,7 +30,7 @@ function Result() {
             setResultData(findResult);
         }else{
             alert('입력하신 정보는 없습니다. 처음으로 돌아갑니다.');
-            navigate('/');
+            navigate('/', { replace: true});
         }
     }, [resultScore]);
 
