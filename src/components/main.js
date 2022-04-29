@@ -7,7 +7,7 @@ function Main() {
     <Div>
     <Pp>나의 해마 유형은 뭘까?</Pp>
     <Line><P>해마 테스트</P></Line>
-    <Ppp>이 테스트는 짧은 스토리가 있는 테스트입니다! 그냥 넘기시면 결과물에 이해하기 어렵습니다!</Ppp>
+    <Ppp>해마 테스트는 짧은 스토리가 있는 자아존중감 테스트입니다! 그냥 넘기시면 이해하기 어렵습니다!</Ppp>
     </Div>
     <Link to="/story0"><Button>시작하기</Button></Link>
     </Wrapper>
