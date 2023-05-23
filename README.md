@@ -1,14 +1,32 @@
-# 해마 테스트
-[해마 테스트 바로가기](https://hippocampus-test.netlify.app/)
+# 해마 유형 테스트
+![해마유형테스트로고](https://github.com/kimseowoo03/hippocampus-test/assets/102151860/c57b46df-a99d-4370-858b-377a74adc04f)
 
-------------
-## 해마 테스트란?
-> 실제 뇌속에 있는 해마를 참고로 제작한 스토리가 있는 자아존중감 테스트다. 
+## 프로젝트 소개
+실제 뇌속에 있는 해마를 참고로 제작한 스토리가 있는 자아존중감 테스트입니다.
 
-------------
-## React 토이 프로젝트하게 된 이유
-> 리액트를 얼마 안 배운 시점에서 심리테스트, mbti 테스트 등 전부터 직접 만들어 보고 싶은 계획이 있었다. 리액트의 Router에 대해 궁금했었고 리액트를 이제 막 시작한 시점에서 이론적으로 배우는 것도 좋지만 무언가 직접 만들어 보고 경험하면서 배우고 싶었기 때문에 토이 프로젝트인 '헤마 테스트' 를 제작하게 되었다.
+## 개발 환경
+- React 18.0.0
+- React-route-dom 6.3.0 
+- styled-components 5.3.5
+- Desgin: Figma, Procreate
+- Deployment: Netlify
 
-------------
-더 자세한 내용은 노션을 가보면 알 수 있다.
-[노션 바로가기](https://pool-pantydraco-4e9.notion.site/024d9b4450ce4b6abdb842bc3e0b5a5c)
+### 개발 기간
+4월 22일 ~ 4월 29일
+
+### 개발 환경 설정
+```
+$ git clone https://github.com/kimseowoo03/hippocampus-test.git
+$ npm install
+$ npm start
+```
+### 카카오톡 공유하기
+
+API 키 등록:
+1. 카카오 개발자 사이트에 접속하여 애플리케이션을 등록하고 API 키를 발급받습니다.
+2. 발급받은 API 키를 .env 파일의 `REACT_APP_KAKAO_API_KEY` 변수에 입력합니다.
+
+이 기능을 활용하려면 카카오 개발자 사이트에서 애플리케이션 등록과 API 키 발급이 필요합니다. 자세한 내용은 [카카오 개발자 사이트](https://developers.kakao.com/)를 참고해주세요.
+
+--------
+프로젝트의 구조 및 내부 흐름 요약 설명서는 docs를 참고해주세요.

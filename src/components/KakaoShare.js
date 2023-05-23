@@ -10,7 +10,7 @@ const KakaoShare = ({data}) => {
 
     useEffect(() => {
         Kakao.cleanup();
-        Kakao.init('bed533cf962ff340c1987f3869347037');
+        Kakao.init(process.env.REACT_APP_KAKAO_API_KEY);
     },[]);
 
     const shareKakao = () => {
