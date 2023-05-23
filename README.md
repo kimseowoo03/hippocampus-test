@@ -29,4 +29,4 @@ API 키 등록:
 이 기능을 활용하려면 카카오 개발자 사이트에서 애플리케이션 등록과 API 키 발급이 필요합니다. 자세한 내용은 [카카오 개발자 사이트](https://developers.kakao.com/)를 참고해주세요.
 
 --------
-프로젝트의 구조 및 내부 흐름 요약 설명서는 [docs](https://github.com/kimseowoo03/hippocampus-test.git/master/docs)를 참고해주세요.
+프로젝트의 구조 및 내부 흐름 요약 설명서는 [docs](https://github.com/kimseowoo03/hippocampus-test/tree/master/docs)를 참고해주세요.
